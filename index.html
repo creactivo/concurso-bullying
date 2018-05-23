@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Business Casual - Start Bootstrap Theme</title>
+    <title>Concurso Bullying Off</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -59,13 +59,19 @@
 
     <section class="page-section clearfix">
       <div class="container">
+        <div class="row">
         <div class="intro">
-         <img class="intro-img img-fluid mb-2 mb-lg-0 rounded" src="img/intro.jpg" alt="" href="" data-toggle="modal" data-target=".bd-example-modal-lg1">
-          <div class="intro-text left-0 text-center bg-faded p-2 rounded">
-            <h2 class="section-heading mb-2">
+        <div class="intro-img">
+         <img class="img-fluid mt-5 mb-5 mb-lg-0 rounded" src="img/img-video.jpg" alt="" href="" data-toggle="modal" data-target=".bd-example-modal-lg1">
+         <p></p>
+
+         <div class="col-xl-8 mx-auto text-center reloj" id="clock"></div>
+        </div>
+          <div class="intro-text left-0 text-center bg-faded p-4 rounded">
+    
               <img class="img-fluid" src="img/logo.png" alt="logo bullying off">
               <!-- <span class="section-heading-lower">Worth Drinking</span> -->
-            </h2>
+          
             <p class="mb-3">Every cup of our quality artisan coffee starts with locally sourced, hand picked ingredients. Once you try it, our coffee will be a blissful addition to your everyday morning routine - we guarantee it!
             </p>
             <div class="intro-button mx-auto">
@@ -74,15 +80,17 @@
           </div>
         </div>
       </div>
+      </div>
     </section>
+
 
     <section class="page-section cta" id="cta">
       <div class="container">
         <div class="row">
-          <div class="col-xl-9 mx-auto">
+          <div class="col-xl-10 mx-auto">
             <div class="cta-inner text-center rounded">
               <div class="row">
-              <div class="col-xl-4 mt-3 mb-4"> <h2 class="section-heading mb-4">
+              <div class="col-xl-3 mt-3 mb-4"> <h2 class="section-heading mb-4">
                 <span class="section-heading-upper">Our Promise</span>
                 <span class="section-heading-lower">To You</span>
               </h2>
@@ -90,7 +98,7 @@
 
               <button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target=".bd-example-modal-lg11">Large modal</button>
             </div>
-              <div class="col-xl-4 mt-3 mb-4"> <h2 class="section-heading mb-4">
+              <div class="col-xl-3 mt-3 mb-4"> <h2 class="section-heading mb-4">
                 <span class="section-heading-upper">Our Promise</span>
                 <span class="section-heading-lower">To You</span>
               </h2>
@@ -98,13 +106,21 @@
 
               <button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target=".bd-example-modal-lg22">Large modal</button>
             </div>
-              <div class="col-xl-4 mt-3 mb-4"> <h2 class="section-heading mb-4">
+              <div class="col-xl-3 mt-3 mb-4"> <h2 class="section-heading mb-4">
                 <span class="section-heading-upper">Our Promise</span>
                 <span class="section-heading-lower">To You</span>
               </h2>
               <p class="mb-0">When you walk into our shop to start your day, we are dedicated to.</p>
 
               <button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target=".bd-example-modal-lg33">Large modal</button>
+            </div>
+            <div class="col-xl-3 mt-3 mb-4"> <h2 class="section-heading mb-4">
+                <span class="section-heading-upper">Our Promise</span>
+                <span class="section-heading-lower">To You</span>
+              </h2>
+              <p class="mb-0">When you walk into our shop to start your day, we are dedicated to.</p>
+
+              <button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target=".bd-example-modal-lg44">Large modal</button>
             </div>
              </div>
             </div>
@@ -150,11 +166,16 @@
 </div>
 <!-- Large modal fin -->
 
-<!-- Large modal -->
+<!-- Large modal video-->
 <div class="modal fade bd-example-modal-lg1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabev" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
-      <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/191887252?autoplay=1&loop=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script> 
+      <video autoplay>
+  <source src="mp4/animacion-bulliying-off.mp4" type="video/mp4" id="myvideo">
+  I'm sorry; your browser doesn't support HTML5 video.
+  <!-- You can embed a Flash player here, to play your mp4 video in older browsers -->
+</video>
+      
     </div>
   </div>
 </div>
@@ -164,6 +185,13 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/vide/jquery.vide.min.js"></script>
+    <script src="js/video-bg.js"></script>
+    <script src="js/reloj-add.js"></script>
+
+
+
+
     <script>
       $(document).ready(function() {
         $('a[href^="#"]').click(function() {
@@ -178,6 +206,16 @@
           return false;
         });
       });
+    </script>
+    <script>
+     var elem = document.getElementById("myvideo");
+if (elem.requestFullscreen) {
+  elem.requestFullscreen();
+} else if (elem.mozRequestFullScreen) {
+  elem.mozRequestFullScreen();
+} else if (elem.webkitRequestFullscreen) {
+  elem.webkitRequestFullscreen();
+}
     </script>
 
   </body>

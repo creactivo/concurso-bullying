@@ -1,9 +1,6 @@
 body {
   font-family: 'Lora';
-  background-image: url("../img/bg.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover; }
+  background-image: url("../mp4/bg.mp4"); }
 
 h1,
 h2,
@@ -35,8 +32,8 @@ p {
     line-height: 4rem; }
 
 .page-section {
-  margin-top: 5rem;
-  margin-bottom: 5rem; }
+  margin-top: 0rem;
+  margin-bottom: 10rem; }
 
 .section-heading {
   text-transform: uppercase; }
@@ -51,6 +48,20 @@ p {
 
 .bg-faded {
   background-color: rgba(255, 255, 255, 0.85); }
+
+.modal-lg {
+  max-width: 900px; }
+
+.modal-content {
+  background-color: #000; }
+
+.reloj {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+  color: #2b2b2b;
+  background-color: #fff;
+  padding: .5rem;
+  border-radius: 5px; }
 
 #mainNav {
   background-color: rgba(47, 23, 15, 0.9);
@@ -82,12 +93,12 @@ p {
   position: relative; }
   @media (min-width: 992px) {
     .intro .intro-img {
-      width: 65%;
+      width: 60%;
       float: right; }
     .intro .intro-text {
       left: 0;
-      width: 60%;
-      margin-top: 3rem;
+      width: 70%;
+      margin-top: 4rem;
       position: absolute; }
       .intro .intro-text .intro-button {
         width: 100%;

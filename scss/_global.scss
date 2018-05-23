@@ -1,10 +1,10 @@
 body {
   @include body-font;
-  background-image: url('../img/bg.jpg');
+  background-image: url('../mp4/bg.mp4');
   // background: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url('../img/bg.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
+  //background-attachment: fixed;
+  //background-position: center;
+  //background-size: cover;
 }
 
 h1,
@@ -44,8 +44,8 @@ p {
 }
 
 .page-section {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-top: 0rem;
+  margin-bottom: 10rem;
 }
 
 .section-heading {
@@ -64,4 +64,18 @@ p {
 
 .bg-faded {
   background-color: fade-out($white, 0.15);
+}
+.modal-lg{
+  max-width:900px;
+}
+.modal-content{
+  background-color:#000;
+}
+.reloj{
+  font-family: 'Raleway', sans-serif;
+  font-size:1.5rem;
+  color:#2b2b2b;
+  background-color:#fff;
+  padding:.5rem;
+  border-radius:5px;
 }
